@@ -1,0 +1,22 @@
+{
+  "name": "dotgenv",
+  "version": "1.0.0",
+  "description": "A Global secrets manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sweetdevil144/dotgenv.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Abhinav Pandey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sweetdevil144/dotgenv/issues"
+  },
+  "homepage": "https://github.com/Sweetdevil144/dotgenv#readme"
+}
