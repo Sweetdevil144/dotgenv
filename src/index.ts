@@ -2,7 +2,7 @@
 
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { setEnv, getEnv, deleteEnv } from './utils/commands';
+import { setEnv, getEnv, deleteEnv, importEnv } from './utils/commands';
 
 yargs(hideBin(process.argv))
   .command('set <key> <value>', 'Set an environment variable', {}, (argv) => {
@@ -20,4 +20,14 @@ yargs(hideBin(process.argv))
       deleteEnv(argv.key);
     }
   })
+  .command(
+    'import <key>',
+    'Import an environment variable to local .env file',
+    {},
+    (argv) => {
+      if (typeof argv.key === 'string') {
+        importEnv(argv.key);
+      }
+    },
+  )
   .parse();
