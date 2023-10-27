@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 exports.deleteEnv = exports.getEnv = exports.setEnv = void 0;
