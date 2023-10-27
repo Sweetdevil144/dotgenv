@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import yargs from "yargs";
-import { hideBin } from "yargs/helpers";
-import { setEnv, getEnv, deleteEnv } from "./utils/commands";
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+import { setEnv, getEnv, deleteEnv } from './utils/commands';
 
 yargs(hideBin(process.argv))
   .command('set <key> <value>', 'Set an environment variable', {}, (argv) => {
