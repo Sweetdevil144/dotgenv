@@ -1,9 +1,11 @@
 # dotgenv
 
 ## Description
+
 **dotgenv** is a comprehensive and versatile tool aimed at simplifying the management of environment variables and secrets. This robust utility streamlines the process of handling sensitive information like API keys and configuration parameters, ensuring a more secure and efficient development workflow. Designed with simplicity and functionality in mind, dotgenv is an ideal choice for developers looking to enhance their project's configuration management.
 
 ## Features
+
 - **Environment Variable Management**: Easily set, update, and delete environment variables.
 - **Seamless Integration**: Quick to set up with existing Node.js projects.
 - **Secure Secrets Handling**: Offers a safer way to handle API keys and other confidential data.
@@ -47,6 +49,7 @@ deleteEnv('API_KEY');
 ```
 
 ## Contributing
+
 Contributions are what make the open source community such a fantastic place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
@@ -56,18 +59,22 @@ Contributions are what make the open source community such a fantastic place to 
 5. Open a Pull Request
 
 ## License
+
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Author
-**Abhinav Pandey** - *Initial Work* - [AbhinavPandey](https://github.com/Sweetdevil144)
+
+**Abhinav Pandey** - _Initial Work_ - [AbhinavPandey](https://github.com/Sweetdevil144)
 
 ## Acknowledgements
+
 - [chalk](https://www.npmjs.com/package/chalk)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [inquirer](https://www.npmjs.com/package/inquirer)
 - [yargs](https://www.npmjs.com/package/yargs)
 
 ## Contact
+
 Abhinav Pandey : [abhinavpandet1230@gmail.com](abhinavpandet1230@gmail.com)
 
 Project Link: [https://github.com/Sweetdevil144/dotgenv](https://github.com/Sweetdevil144/dotgenv)
