@@ -1,5 +1,5 @@
 {
-  "name": "dotgenv",
+  "name": "@abhinavvv/dotgenv",
   "version": "0.1.0",
   "description": "A Global secrets manager",
   "main": "dist/index.js",

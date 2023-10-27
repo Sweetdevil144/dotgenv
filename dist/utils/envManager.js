@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 'use strict';
 var __importDefault =
   (this && this.__importDefault) ||
