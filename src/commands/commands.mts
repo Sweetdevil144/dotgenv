@@ -1,4 +1,4 @@
-import { readEnvFile, writeEnvFile } from './envManager';
+import { readEnvFile, writeEnvFile } from './envManager.mjs';
 import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
