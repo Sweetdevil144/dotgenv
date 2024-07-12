@@ -1,4 +1,4 @@
-import { readEnvFile, writeEnvFile } from '../src/commands/envManager.mjs';
+import { readEnvFile, writeEnvFile } from '../src/commands/envManager.js';
 
 describe('EnvManager', () => {
   const testKey = 'MANAGER_TEST_KEY';
