@@ -1,4 +1,4 @@
-import { readEnvFile, writeEnvFile, parseEnvFile } from './envManager.js';
+import { readEnvFile, writeEnvFile, parseEnvFile } from './envManager';
 import fs from 'fs';
 import path from 'path';
 

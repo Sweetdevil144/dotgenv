@@ -1,5 +1,5 @@
-import { setEnv, getEnv, deleteEnv } from '../src/commands/commands.js';
-import { readEnvFile } from '../src/commands/envManager.js';
+import { setEnv, getEnv, deleteEnv } from '../src/commands/commands';
+import { readEnvFile } from '../src/commands/envManager';
 
 describe('Commands', () => {
   const testKey = 'TEST_KEY';
