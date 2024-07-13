@@ -15,7 +15,7 @@ export function parseEnvFile(filePath: string): { [key: string]: string } {
     key = key.trim();
     envValue = value.join('=').trim();
     if (key != null && envValue != null) {
-      env[key]= envValue;
+      env[key] = envValue;
     }
   });
   return env;
