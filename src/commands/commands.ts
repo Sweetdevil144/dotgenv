@@ -1,7 +1,6 @@
-import { readEnvFile, writeEnvFile } from './envManager.js';
+import { readEnvFile, writeEnvFile, parseEnvFile } from './envManager.js';
 import fs from 'fs';
 import path from 'path';
-import dotenv from 'dotenv';
 
 export function setEnv(key: string, value: string) {
   const envVars = readEnvFile();
@@ -36,7 +35,7 @@ export function importEnv(key: string) {
   let localEnvVars: { [key: string]: string } = {};
 
   if (fs.existsSync(localEnvPath)) {
-    localEnvVars = dotenv.parse(fs.readFileSync(localEnvPath));
+    localEnvVars = parseEnvFile(localEnvPath);
   }
 
   if (globalEnvVars[key]) {

@@ -1,18 +1,32 @@
 import fs from 'fs';
 import path from 'path';
-import dotenv from 'dotenv';
 
 const GLOBAL_ENV_PATH = path.join(
   process.env.HOME || process.env.USERPROFILE || '.',
   '.global.env',
 );
 
+export function parseEnvFile(filePath: string): { [key: string]: string } {
+  let envValue: string = '';
+  const env: { [key: string]: string } = {};
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  fileContent.split('\n').forEach((line) => {
+    let [key, ...value] = line.split('=');
+    key = key.trim();
+    envValue = value.join('=').trim();
+    if (key != null && envValue != null) {
+      env[key]= envValue;
+    }
+  });
+  return env;
+}
+
 export function readEnvFile(): { [key: string]: string } {
   try {
     if (!fs.existsSync(GLOBAL_ENV_PATH)) {
       return {};
     }
-    return dotenv.parse(fs.readFileSync(GLOBAL_ENV_PATH));
+    return parseEnvFile(GLOBAL_ENV_PATH);
   } catch (error) {
     console.error('Error reading global env file: ', error);
     return {};
