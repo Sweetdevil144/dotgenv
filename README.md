@@ -1,5 +1,7 @@
 # dotgenv
 
+Our DevTo Blog [Link](https://dev.to/devrx/dotgenv-revolutionize-your-nodejs-secret-management-a1m)
+
 ## Description
 
 **dotgenv** is a comprehensive and versatile tool aimed at simplifying the management of environment variables and secrets. This robust utility streamlines the process of handling sensitive information like API keys and configuration parameters, ensuring a more secure and efficient development workflow. Designed with simplicity and functionality in mind, dotgenv is an ideal choice for developers looking to enhance their project's configuration management.
